@@ -123,8 +123,6 @@ jobs:
         cd openwrt
         make defconfig
         make download -j8
-        find dla -size -1024c -exec ls -l {} \;
-        find dla -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware
       id: compile
